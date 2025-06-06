@@ -1,0 +1,57 @@
+.profile-screen {
+    background-color: rgb(20, 20, 25);
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+    height: 100vh;
+}
+
+.profiles {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 100px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.profile:hover {
+    transform: scale(1.2);
+}
+
+.profileImg {
+    width: inherit;
+    width: 220px;
+    height: 220px;
+    border-radius: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border: 2px solid white;
+}
+
+.profileImg:hover {
+    box-shadow: 0 0 100px 100px rgba(255, 255, 255, 0.15);
+}
+
+.userName {
+    margin-top: 15px;
+    font-size: 21px;
+}
+
+.profile-screen h1 {
+    font-size: 40px;
+}
