@@ -4,9 +4,9 @@ import user from '../assets/userBackground.png';
 import { useNavigate } from 'react-router-dom';
 
 const profiles = [
-  {name: 'Recruiter', gif: ''},
-  {name: 'Developer', gif: ''},
-  {name: 'Friend', gif: ''},
+  {name: 'Recruiter'},
+  {name: 'Developer'},
+  {name: 'Friend'},
 ];
 
 const ProfileSelect = ({ onSelect }) => {
