@@ -48,6 +48,10 @@
     margin-right: 10px;
 }
 
+.profileVideoText p b {
+    color: rgb(238, 173, 45);
+}
+
 #resume {
     background-color: rgb(49, 49, 49);
 }
@@ -57,6 +61,11 @@
 }
 
 .profileHeader {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     color: white;
     padding: 1.5rem;
     position: fixed;
@@ -67,4 +76,44 @@
 
 .logoHeader{
     height: 1.7rem;
+}
+
+.changeProfile {
+    height: 2rem;
+    width: auto;
+    border-radius: 200px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.menuOptions {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 2rem;
+}
+
+.moreAboutMeContainer {
+    background-color: rgb(20, 20, 25);
+    color: white;
+    padding: 3rem;
+}
+
+.moreAboutMeContainer h2 {
+    margin-top: 0px;
+}
+
+.forYouContent {
+    display: flex;
+}
+
+.item {
+    margin-right: 1rem;
+}
+
+.itemImg {
+    /* border: 1px solid white; */
+    width: 300px;
+    height: 168.75px;
 }
