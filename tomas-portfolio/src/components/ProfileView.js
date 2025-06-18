@@ -1,4 +1,4 @@
-import React from 'react';
+import { useRef } from 'react';
 import { useParams } from 'react-router-dom';
 import user from '../assets/userBackground.png'; 
 import './ProfileView.css';
@@ -30,10 +30,16 @@ const forYouItems = [
 const ProfileView = () => {
     const { type } = useParams();
     const profile = profileContent[type];
+    const aboutMeRef = useRef(null);
 
     if (!profile) {
         return <p>Profile not found.</p>;
     }
+
+    const scrollToAboutMe = (e) => {
+        e.preventDefault();
+        aboutMeRef.current?.scrollIntoView({ behavior: "smooth" });
+    };
 
     return (
         <div>
@@ -47,7 +53,7 @@ const ProfileView = () => {
                     <span>Contact Me</span>
                 </div>
                 <div>
-                    <img src={user} alt='' className="changeProfile"></img>
+                    <img src={user} title='Icon made by Freepik from www.flaticon.com' alt='' className="changeProfile"></img>
                 </div>
             </div>
             <div className="profileView">
@@ -55,7 +61,7 @@ const ProfileView = () => {
  
                 <div className='profileVideoText'>
                     <h1>Tomás Martins - Computer Science Major</h1>
-                    <p>Hi, I'm Tomás — a Computer Science major passionate about building creative and practical software. <b>Scroll down</b> to learn more about me, my experience, and the projects I've worked on.</p>
+                    <p>Hi, I'm Tomás — a Computer Science major passionate about building creative and practical software. <a href='#' onClick={scrollToAboutMe}>Scroll down</a> to learn more about me, my experience, and the projects I've worked on.</p>
                     <div className='buttonsDiv'>
                         <button id='resume' onClick={() => window.open('https://drive.google.com/drive/folders/1jCzgGlVudGqlpwu9kI20hoI65aSJfjuF?usp=drive_link')}>▶ <b>Resume</b></button>
                         <button id='linkedin' onClick={() => window.open('https://linkedin.com/in/tomás-martins-9bb921360')}><b>Linkedin</b></button>
@@ -65,7 +71,7 @@ const ProfileView = () => {
             <div className='moreAboutMeContainer'>
                 <div className='forYouContainer'>
                     <h2>For You</h2>
-                    <div className='forYouContent'>
+                    <div id='forYouContent' ref={aboutMeRef} className='forYouContent'>
                         {forYouItems.map((item) => (
                                   <div
                                     key={item.name}

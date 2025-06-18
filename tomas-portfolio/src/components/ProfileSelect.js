@@ -26,7 +26,7 @@ const ProfileSelect = ({ onSelect }) => {
             className="profile"
             onClick={() => handleClick(profile.name)}
           >
-            <img src={user} alt={profile.name} className="profileImg"></img>
+            <img src={user} title='Icon made by Freepik from www.flaticon.com' alt={profile.name} className="profileImg"></img>
             <div className='userName'>{profile.name}</div>
           </div>
         ))}
