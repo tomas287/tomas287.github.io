@@ -34,7 +34,6 @@ const Experience = () => {
                         <div className='experienceEntryTextDiv'>
                             <p className='experienceEntryTextP'>Graduated from NOVA School of Science and Technology in 2025 with a Master's Degree in Computer Science.</p>
                             <p className='experienceEntryTextP'>The course provided a strong foundation in both theorical and practical aspects of Computer Science and Engineering, while also focusing on collaborative projects that mirror professional environments.</p>
-                            {/* <p className='experienceEntryTextP'>The course provided a strong foundation in both theorical and practical aspects of Computer Science and Engineering.</p> */}
                         </div>
                     </div>
                 </div>
