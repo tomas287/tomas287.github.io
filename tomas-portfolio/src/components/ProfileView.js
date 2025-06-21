@@ -50,6 +50,7 @@ const ProfileView = () => {
                     <span>Experience</span>
                     <span>Skills</span>
                     <span>Projects</span>
+                    <span>Publications</span>
                     <span>Contact Me</span>
                 </div>
                 <div>

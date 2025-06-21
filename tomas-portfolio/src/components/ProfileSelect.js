@@ -1,4 +1,3 @@
-import React from 'react';
 import './ProfileSelect.css';
 import user from '../assets/userBackground.png'; 
 import { useNavigate } from 'react-router-dom';

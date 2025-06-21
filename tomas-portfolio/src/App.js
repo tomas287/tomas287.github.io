@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-route
 import LoadingScreen from './components/LoadingScreen';
 import ProfileSelect from './components/ProfileSelect';
 import ProfileView from './components/ProfileView';
+import Experience from './components/Experience';
 
 function LoadingWrapper() {
   const [done, setDone] = useState(false);
@@ -24,6 +25,7 @@ function App() {
         <Route path="/" element={<LoadingWrapper />} />
         <Route path="/profiles" element={<ProfileSelect />} />
         <Route path="/profile/:type" element={<ProfileView />} />
+        <Route path="/profile/:type/experience" element={<Experience />} />
       </Routes>
     </Router>
   );
