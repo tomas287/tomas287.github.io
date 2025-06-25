@@ -25,7 +25,7 @@ function App() {
         <Route path="/" element={<LoadingWrapper />} />
         <Route path="/profiles" element={<ProfileSelect />} />
         <Route path="/profile/:type" element={<ProfileView />} />
-        <Route path="/profile/:type/experience" element={<Experience />} />
+        <Route path="/experience" element={<Experience />} />
       </Routes>
     </Router>
   );

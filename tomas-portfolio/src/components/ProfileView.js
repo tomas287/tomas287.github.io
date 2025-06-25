@@ -1,12 +1,12 @@
 import { useRef } from 'react';
 import { useParams } from 'react-router-dom';
-import user from '../assets/userBackground.png'; 
 import './ProfileView.css';
-import logo from '../assets/logo.png';
 import experienceImg from '../assets/experience.jpg';
 import skillsImg from '../assets/skills.jpg';
 import projectImg from '../assets/projects.jpg';
 import contactMeImg from '../assets/contactMe.jpg';
+import { useNavigate } from 'react-router-dom';
+import Header from './Header';
 
 const profileContent = {
     recruiter: {
@@ -21,13 +21,14 @@ const profileContent = {
 };
 
 const forYouItems = [
-  {name: 'Experience', season: 'S1 E1', img: experienceImg},
-  {name: 'Skills', season: 'S1 E2', img: skillsImg},
-  {name: 'Projects', season: 'S1 E3', img: projectImg},
-  {name: 'Contact Me', season: 'S1 E4', img: contactMeImg},
+  {name: 'Experience', season: 'S1 E1', img: experienceImg, path: 'experience'},
+  {name: 'Skills', season: 'S1 E2', img: skillsImg, path: 'skills'},
+  {name: 'Projects', season: 'S1 E3', img: projectImg, path: 'projects'},
+  {name: 'Contact Me', season: 'S1 E4', img: contactMeImg, path: 'contact-me'},
 ];
 
 const ProfileView = () => {
+    const navigate = useNavigate();
     const { type } = useParams();
     const profile = profileContent[type];
     const aboutMeRef = useRef(null);
@@ -41,22 +42,13 @@ const ProfileView = () => {
         aboutMeRef.current?.scrollIntoView({ behavior: "smooth" });
     };
 
+    const handleClick = (newPage) => {
+        navigate(`/${newPage}`);
+    };
+
     return (
         <div>
-            <div className="profileHeader">
-                <img className='logoHeader' alt='' src={logo}></img>
-                <div className='menuOptions'>
-                    <span>Home</span>
-                    <span>Experience</span>
-                    <span>Skills</span>
-                    <span>Projects</span>
-                    <span>Publications</span>
-                    <span>Contact Me</span>
-                </div>
-                <div>
-                    <img src={user} title='Icon made by Freepik from www.flaticon.com' alt='' className="changeProfile"></img>
-                </div>
-            </div>
+            <Header></Header>
             <div className="profileView">
                 <video src={profile.video}  autoPlay loop muted playsInline className="profileVideo"/>
  
@@ -77,7 +69,7 @@ const ProfileView = () => {
                                   <div
                                     key={item.name}
                                     className="item"
-                                    // onClick={() => handleClick(profile.name)}
+                                    onClick={() => handleClick(item.path)}
                                   >
                                     <img src={item.img} alt={item.name} className="itemImg"></img>
                                     <div>{item.season} <b>{item.name}</b></div>
