@@ -4,6 +4,7 @@ import './ProfileView.css';
 import experienceImg from '../assets/experience.jpg';
 import skillsImg from '../assets/skills.jpg';
 import projectImg from '../assets/projects.jpg';
+import publicationsImg from '../assets/publications.jpg';
 import contactMeImg from '../assets/contactMe.jpg';
 import { useNavigate } from 'react-router-dom';
 import Header from './Header';
@@ -24,7 +25,8 @@ const forYouItems = [
   {name: 'Experience', season: 'S1 E1', img: experienceImg, path: 'experience'},
   {name: 'Skills', season: 'S1 E2', img: skillsImg, path: 'skills'},
   {name: 'Projects', season: 'S1 E3', img: projectImg, path: 'projects'},
-  {name: 'Contact Me', season: 'S1 E4', img: contactMeImg, path: 'contact-me'},
+//   {name: 'Publications', season: 'S1 E4', img: publicationsImg, path: 'publications'},
+  {name: 'Contact Me', season: 'S1 E5', img: contactMeImg, path: 'contact-me'},
 ];
 
 const ProfileView = () => {

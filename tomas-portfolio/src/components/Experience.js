@@ -43,8 +43,9 @@ const Experience = () => {
                         <h1>.NET Developer</h1>
                         <p><small>Apr 2022 — Jul 2022</small></p>
                         <div className='experienceEntryTextDiv'>
-                            <p className='experienceEntryTextP'>Graduated from NOVA School of Science and Technology in 2025 with a Master's Degree in Computer Science.</p>
-                            <p className='experienceEntryTextP'>The course provided a strong foundation in both theorical and practical aspects of Computer Science and Engineering, while also focusing on collaborative projects that mirror professional environments.</p>
+                            <p className='experienceEntryTextP'>During my final BSc semester, I completed a 4-month internship at Banco ATLANTICO Europa as a .NET Developer.</p>
+                            <p className='experienceEntryTextP'>During the internship, I implemented a new OTP (One-Time Password) message delivery system focusing on improving security and reliability.</p>
+                            <p className='experienceEntryTextP'>I worked mainly with <span>C#</span>, <span>ASP.NET</span>, and <span>SQL Server</span>, followed <span>agile methodologies</span>, and used <span>Git</span> and <span>Azure DevOps</span> for version control and project tracking.</p>
                         </div>
                     </div>
                     <img src={atlantico} id='novaFCT'></img>

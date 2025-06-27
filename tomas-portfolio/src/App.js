@@ -26,6 +26,10 @@ function App() {
         <Route path="/profiles" element={<ProfileSelect />} />
         <Route path="/profile/:type" element={<ProfileView />} />
         <Route path="/experience" element={<Experience />} />
+        {/* <Route path="/skills" element={<Experience />} />
+        <Route path="/projects" element={<Experience />} />
+        <Route path="/publications" element={<Experience />} />
+        <Route path="/contact-me" element={<Experience />} /> */}
       </Routes>
     </Router>
   );

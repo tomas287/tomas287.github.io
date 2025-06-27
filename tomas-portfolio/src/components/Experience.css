@@ -56,6 +56,10 @@ p small {
     margin-top: 0.5rem !important;
 }
 
+.experienceEntryTextP span {
+    color: rgb(171, 171, 171);
+}
+
 .scrollArrow {
     margin-top: .5rem;
     height: 2.5rem;
