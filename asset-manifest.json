@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.0ed13a88.css",
-    "main.js": "/static/js/main.f34818f8.js",
+    "main.css": "/static/css/main.faec142d.css",
+    "main.js": "/static/js/main.9479174e.js",
     "static/js/453.4c145cb9.chunk.js": "/static/js/453.4c145cb9.chunk.js",
     "static/media/nova fct.jpeg": "/static/media/nova fct.56f64f50113a4cfc8643.jpeg",
     "static/media/atlantico.jpg": "/static/media/atlantico.902e5adc05ad6cb09610.jpg",
@@ -12,13 +12,15 @@
     "static/media/projects.jpg": "/static/media/projects.9fb55f6bdcb0e5e6c1b2.jpg",
     "static/media/logo.png": "/static/media/logo.0780bb0693d453d6dc1f.png",
     "static/media/experience.jpg": "/static/media/experience.820de511bb16287ac4d2.jpg",
+    "static/media/cSharp.png": "/static/media/cSharp.4df92aea81da5c346e70.png",
+    "static/media/cPlus.png": "/static/media/cPlus.135626e47d4f5626830c.png",
     "index.html": "/index.html",
-    "main.0ed13a88.css.map": "/static/css/main.0ed13a88.css.map",
-    "main.f34818f8.js.map": "/static/js/main.f34818f8.js.map",
+    "main.faec142d.css.map": "/static/css/main.faec142d.css.map",
+    "main.9479174e.js.map": "/static/js/main.9479174e.js.map",
     "453.4c145cb9.chunk.js.map": "/static/js/453.4c145cb9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ed13a88.css",
-    "static/js/main.f34818f8.js"
+    "static/css/main.faec142d.css",
+    "static/js/main.9479174e.js"
   ]
 }
