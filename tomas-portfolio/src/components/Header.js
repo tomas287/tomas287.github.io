@@ -17,7 +17,7 @@ const Header = () => {
             <div className='menuOptions'>
                 <a onClick={() => handleClick("/profiles")}>Home</a>
                 <a onClick={() => handleClick("/experience")}>Experience</a>
-                <span>Skills</span>
+                <a onClick={() => handleClick("/skills")}>Skills</a>
                 <span>Projects</span>
                 <span>Publications</span>
                 <span>Contact Me</span>

@@ -4,6 +4,7 @@ import LoadingScreen from './components/LoadingScreen';
 import ProfileSelect from './components/ProfileSelect';
 import ProfileView from './components/ProfileView';
 import Experience from './components/Experience';
+import Skills from './components/Skills';
 
 function LoadingWrapper() {
   const [done, setDone] = useState(false);
@@ -26,8 +27,8 @@ function App() {
         <Route path="/profiles" element={<ProfileSelect />} />
         <Route path="/profile/:type" element={<ProfileView />} />
         <Route path="/experience" element={<Experience />} />
-        {/* <Route path="/skills" element={<Experience />} />
-        <Route path="/projects" element={<Experience />} />
+        <Route path="/skills" element={<Skills />} />
+        {/* <Route path="/projects" element={<Experience />} />
         <Route path="/publications" element={<Experience />} />
         <Route path="/contact-me" element={<Experience />} /> */}
       </Routes>

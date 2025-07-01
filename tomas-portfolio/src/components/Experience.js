@@ -45,7 +45,7 @@ const Experience = () => {
                         <div className='experienceEntryTextDiv'>
                             <p className='experienceEntryTextP'>During my final BSc semester, I completed a 4-month internship at Banco ATLANTICO Europa as a .NET Developer.</p>
                             <p className='experienceEntryTextP'>During the internship, I implemented a new OTP (One-Time Password) message delivery system focusing on improving security and reliability.</p>
-                            <p className='experienceEntryTextP'>I worked mainly with <span>C#</span>, <span>ASP.NET</span>, and <span>SQL Server</span>, followed <span>agile methodologies</span>, and used <span>Git</span> and <span>Azure DevOps</span> for version control and project tracking.</p>
+                            <p className='experienceEntryTextP'>I worked mainly with <span>C#</span>, <span>ASP.NET</span>, and <span>Microsoft SQL Server</span>, followed <span>agile methodologies</span>, and used <span>Git</span> and <span>Azure DevOps</span> for version control and project tracking.</p>
                         </div>
                     </div>
                     <img src={atlantico} id='novaFCT'></img>
