@@ -34,6 +34,10 @@
     max-width: 50%;
 }
 
+.buttonsDiv {
+    display: flex;
+}
+
 .profileVideoText .buttonsDiv button {
     color: white;
     border: none;
