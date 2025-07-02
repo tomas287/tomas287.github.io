@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.faec142d.css",
-    "main.js": "/static/js/main.9479174e.js",
+    "main.js": "/static/js/main.9f837eed.js",
     "static/js/453.4c145cb9.chunk.js": "/static/js/453.4c145cb9.chunk.js",
     "static/media/nova fct.jpeg": "/static/media/nova fct.56f64f50113a4cfc8643.jpeg",
     "static/media/atlantico.jpg": "/static/media/atlantico.902e5adc05ad6cb09610.jpg",
@@ -16,11 +16,11 @@
     "static/media/cPlus.png": "/static/media/cPlus.135626e47d4f5626830c.png",
     "index.html": "/index.html",
     "main.faec142d.css.map": "/static/css/main.faec142d.css.map",
-    "main.9479174e.js.map": "/static/js/main.9479174e.js.map",
+    "main.9f837eed.js.map": "/static/js/main.9f837eed.js.map",
     "453.4c145cb9.chunk.js.map": "/static/js/453.4c145cb9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.faec142d.css",
-    "static/js/main.9479174e.js"
+    "static/js/main.9f837eed.js"
   ]
 }
