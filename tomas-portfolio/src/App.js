@@ -5,6 +5,7 @@ import ProfileSelect from './components/ProfileSelect';
 import ProfileView from './components/ProfileView';
 import Experience from './components/Experience';
 import Skills from './components/Skills';
+import ScrollToTop from './components/ScrollToTop';
 
 function LoadingWrapper() {
   const [done, setDone] = useState(false);
@@ -22,6 +23,7 @@ function LoadingWrapper() {
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<LoadingWrapper />} />
         <Route path="/profiles" element={<ProfileSelect />} />

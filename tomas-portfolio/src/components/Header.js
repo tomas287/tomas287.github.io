@@ -23,7 +23,7 @@ const Header = () => {
                 <span>Contact Me</span>
             </div>
             <div>
-                <img src={user} title='Icon made by Freepik from www.flaticon.com' alt='' className="changeProfile"></img>
+                <img src={user} onClick={() => handleClick("/profiles")} title='Icon made by Freepik from www.flaticon.com' alt='' className="changeProfile"></img>
             </div>
         </div>
     );

@@ -26,7 +26,7 @@ const forYouItems = [
   {name: 'Skills', season: 'S1 E2', img: skillsImg, path: 'skills'},
   {name: 'Projects', season: 'S1 E3', img: projectImg, path: 'projects'},
 //   {name: 'Publications', season: 'S1 E4', img: publicationsImg, path: 'publications'},
-  {name: 'Contact Me', season: 'S1 E5', img: contactMeImg, path: 'contact-me'},
+  {name: 'Contact Me', season: 'S1 E4', img: contactMeImg, path: 'contact-me'},
 ];
 
 const ProfileView = () => {
