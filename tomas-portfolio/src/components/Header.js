@@ -19,7 +19,7 @@ const Header = () => {
                 <a onClick={() => handleClick("/experience")}>Experience</a>
                 <a onClick={() => handleClick("/skills")}>Skills</a>
                 <span>Projects</span>
-                <span>Publications</span>
+                <a onClick={() => handleClick("/publications")}>Publications</a>
                 <span>Contact Me</span>
             </div>
             <div>

@@ -47,6 +47,14 @@ p small {
     width: 39vw;
 }
 
+.educationContent .withoutSmallTitle h1 {
+    margin-top: 0px;
+}
+
+.workContent .withoutSmallTitle h1 {
+    margin-top: 0px;
+}
+
 .workContent {
     margin-right: 3rem;
     width: 39vw;

@@ -5,6 +5,7 @@ import ProfileSelect from './components/ProfileSelect';
 import ProfileView from './components/ProfileView';
 import Experience from './components/Experience';
 import Skills from './components/Skills';
+import Publications from './components/Publications';
 import ScrollToTop from './components/ScrollToTop';
 
 function LoadingWrapper() {
@@ -30,8 +31,8 @@ function App() {
         <Route path="/profile/:type" element={<ProfileView />} />
         <Route path="/experience" element={<Experience />} />
         <Route path="/skills" element={<Skills />} />
+        <Route path="/publications" element={<Publications />} />
         {/* <Route path="/projects" element={<Experience />} />
-        <Route path="/publications" element={<Experience />} />
         <Route path="/contact-me" element={<Experience />} /> */}
       </Routes>
     </Router>
