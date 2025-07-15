@@ -4,7 +4,7 @@ import novaFCT from '../assets/nova fct.jpeg'
 import atlantico from '../assets/atlantico.jpg'
 import Header from './Header';
 import { useNavigate } from 'react-router-dom';
-
+import { Section } from "./Section";
 
 
 const Experience = () => {
@@ -37,19 +37,21 @@ const Experience = () => {
                     <p><small>SCROLL DOWN TO VIEW MORE</small></p>
                     <img src={arrow} title='Icon made by Freepik from www.flaticon.com' alt='' className="scrollArrow"></img>
                 </div>
-                <div className='experienceEntry'>
-                    <div className='workContent'>
-                        <p><small>WORK</small></p>
-                        <h1>.NET Developer</h1>
-                        <p><small>Apr 2022 — Jul 2022</small></p>
-                        <div className='experienceEntryTextDiv'>
-                            <p className='experienceEntryTextP'>During my final BSc semester, I completed a 4-month internship at Banco ATLANTICO Europa as a .NET Developer.</p>
-                            <p className='experienceEntryTextP'>During the internship, I implemented a new OTP (One-Time Password) message delivery system focusing on improving security and reliability.</p>
-                            <p className='experienceEntryTextP'>I worked mainly with <span>C#</span>, <span>ASP.NET</span>, and <span>Microsoft SQL Server</span>, followed <span>agile methodologies</span>, and used <span>Git</span> and <span>Azure DevOps</span> for version control and project tracking.</p>
+                <Section>
+                    <div className='experienceEntry'>
+                        <div className='workContent'>
+                            <p><small>WORK</small></p>
+                            <h1>.NET Developer</h1>
+                            <p><small>Apr 2022 — Jul 2022</small></p>
+                            <div className='experienceEntryTextDiv'>
+                                <p className='experienceEntryTextP'>During my final BSc semester, I completed a 4-month internship at Banco ATLANTICO Europa as a .NET Developer.</p>
+                                <p className='experienceEntryTextP'>During the internship, I implemented a new OTP (One-Time Password) message delivery system focusing on improving security and reliability.</p>
+                                <p className='experienceEntryTextP'>I worked mainly with <span>C#</span>, <span>ASP.NET</span>, and <span>Microsoft SQL Server</span>, followed <span>agile methodologies</span>, and used <span>Git</span> and <span>Azure DevOps</span> for version control and project tracking.</p>
+                            </div>
                         </div>
+                        <img src={atlantico} id='novaFCT'></img>
                     </div>
-                    <img src={atlantico} id='novaFCT'></img>
-                </div>
+                </Section>
             </div>
         </div>
     );

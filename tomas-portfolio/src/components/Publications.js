@@ -4,7 +4,7 @@ import arrow from '../assets/downArrow.png'
 import objDetectProt from '../assets/objDetectPrototype.png'
 import manualAnnotation from '../assets/manualAnnotation.png'
 import VideoPlayer from './VideoPlayer';
-
+import { Section } from "./Section";
 
 
 const Publications = () => {
@@ -30,84 +30,95 @@ const Publications = () => {
                     <p><small>SCROLL DOWN TO VIEW MORE</small></p>
                     <img src={arrow} title='Icon made by Freepik from www.flaticon.com' alt='' className="scrollArrow"></img>
                 </div>
-                <div className='experienceEntry'>
-                    <div className='workContent'>
-                        <p><small>PROTOTYPE</small></p>
-                        <div className='experienceEntryTextDiv'>
-                            <p className='experienceEntryTextP'>A user-centered approach was used to identify user needs and assess the benefits of a video-based system for padel racket sports.</p>
-                            <p className='experienceEntryTextP'>Initially, a prototype was developed with 4 functionalities to illustrate to users the possibilities for potential features that such a system could present inspired by the research in other racket sports.</p>
-                            <p className='experienceEntryTextP'>Overall, participants responded positively and showed interest in video analysis features for padel.</p>
+                <Section>
+                    <div className='experienceEntry'>
+                        <div className='workContent'>
+                            <p><small>PROTOTYPE</small></p>
+                            <div className='experienceEntryTextDiv'>
+                                <p className='experienceEntryTextP'>A user-centered approach was used to identify user needs and assess the benefits of a video-based system for padel racket sports.</p>
+                                <p className='experienceEntryTextP'>Initially, a prototype was developed with 4 functionalities to illustrate to users the possibilities for potential features that such a system could present inspired by the research in other racket sports.</p>
+                                <p className='experienceEntryTextP'>Overall, participants responded positively and showed interest in video analysis features for padel.</p>
+                            </div>
+                        </div>
+                        <img src={objDetectProt} id='novaFCT'></img>
+                    </div>
+                </Section>
+                <br></br>
+                <br></br>
+                <br></br>
+                <Section>
+                    <div className='experienceEntry'>
+                        <img src={manualAnnotation} id='novaFCT'></img>
+                        <div className='educationContent'>
+                            <p><small>DATASET</small></p>
+                            <div className='experienceEntryTextDiv'>
+                                <p className='experienceEntryTextP'>After the development and testing of the prototype, a dataset and a web application were created.</p>
+                                <p className='experienceEntryTextP'>The dataset contained over 1,500 manually annotated images, randomly selected from various professional padel matches in the World Padel Tour.</p>
+                            </div>
                         </div>
                     </div>
-                    <img src={objDetectProt} id='novaFCT'></img>
-                </div>
+                </Section>
                 <br></br>
                 <br></br>
                 <br></br>
-                <div className='experienceEntry'>
-                    <img src={manualAnnotation} id='novaFCT'></img>
-                    <div className='educationContent'>
-                        <p><small>DATASET</small></p>
-                        <div className='experienceEntryTextDiv'>
-                            <p className='experienceEntryTextP'>After the development and testing of the prototype, a dataset and a web application were created.</p>
-                            <p className='experienceEntryTextP'>The dataset contained over 1,500 manually annotated images, randomly selected from various professional padel matches in the World Padel Tour.</p>
+                <Section>
+                    <div className='experienceEntry'>
+                        <div className='workContent'>
+                            <p><small>FEATURES</small></p>
+                            <h1>Object Detection</h1>
+                            <div className='experienceEntryTextDiv'>
+                                <p className='experienceEntryTextP'>The web application included 4 main features: object detection, player tracking, heatmaps, and player trajectories.</p>
+                                <p className='experienceEntryTextP'>The object detection feature identified players, the ball, rackets, the net, and the serve lines.</p>
+                            </div>
+                        </div>
+                        <VideoPlayer src={"/assets/detection2.mp4"}/>
+                    </div>
+                </Section>
+                <br></br>
+                <br></br>
+                <br></br>
+                <Section>
+                    <div className='experienceEntry'>
+                        <VideoPlayer src={"/assets/playerHighlight.mp4"}/>
+                        <div className='educationContent'>
+                            <div className='withoutSmallTitle'>
+                                <h1 className='titleWithoutSubtitle'>Player Tracking</h1>
+                                <p className='experienceEntryTextP'>The player tracking feature followed each player individually and highlighted the selected player's performance.</p>
+                                <p className='experienceEntryTextP'>Users could switch between players and assign custom names.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </Section>
                 <br></br>
                 <br></br>
                 <br></br>
-                <div className='experienceEntry'>
-                    <div className='workContent'>
-                        <p><small>FEATURES</small></p>
-                        <h1>Object Detection</h1>
-                        <div className='experienceEntryTextDiv'>
-                            <p className='experienceEntryTextP'>The web application included 4 main features: object detection, player tracking, heatmaps, and player trajectories.</p>
-                            <p className='experienceEntryTextP'>The object detection feature identified players, the ball, rackets, the net, and the serve lines.</p>
+                <Section>
+                    <div className='experienceEntry'>
+                        <div className='workContent'>
+                            <div className='withoutSmallTitle'>
+                                <h1 className='titleWithoutSubtitle'>Heatmap</h1>
+                                <p className='experienceEntryTextP'>The heatmap feature included two versions: static and dynamic.</p>
+                                <p className='experienceEntryTextP'>Detection data was used to draw the court, while tracking data generated the heatmaps.</p>
+                            </div>
+                        </div>
+                        <VideoPlayer src={"/assets/heatmap.mp4"}/>
+                    </div>
+                </Section>
+                <br></br>
+                <br></br>
+                <br></br>
+                <Section>
+                    <div className='experienceEntry'>
+                        <VideoPlayer src={"/assets/trajectory.mp4"}/>
+                        <div className='educationContent'>
+                            <div className='withoutSmallTitle'>
+                                <h1 className='titleWithoutSubtitle'>Player Trajectory</h1>
+                                <p className='experienceEntryTextP'>The player trajectory feature is similar to the dynamic heatmap, offering a different visual representation of player movements during the game.</p>
+                                <p className='experienceEntryTextP'>Feedback on all features remained positive, mirroring the results from the prototype phase.</p>
+                            </div>
                         </div>
                     </div>
-                    <VideoPlayer src={"/assets/detection2.mp4"}/>
-                    {/* <video src={"/assets/detection2.mp4"}  autoPlay loop muted playsInline id='novaFCT'/> */}
-                </div>
-                <br></br>
-                <br></br>
-                <br></br>
-                <div className='experienceEntry'>
-                    <VideoPlayer src={"/assets/playerHighlight.mp4"}/>
-                    <div className='educationContent'>
-                        <div className='withoutSmallTitle'>
-                            <h1 className='titleWithoutSubtitle'>Player Tracking</h1>
-                            <p className='experienceEntryTextP'>The player tracking feature followed each player individually and highlighted the selected player's performance.</p>
-                            <p className='experienceEntryTextP'>Users could switch between players and assign custom names.</p>
-                        </div>
-                    </div>
-                </div>
-                <br></br>
-                <br></br>
-                <br></br>
-                <div className='experienceEntry'>
-                    <div className='workContent'>
-                        <div className='withoutSmallTitle'>
-                            <h1 className='titleWithoutSubtitle'>Heatmap</h1>
-                            <p className='experienceEntryTextP'>The heatmap feature included two versions: static and dynamic.</p>
-                            <p className='experienceEntryTextP'>Detection data was used to draw the court, while tracking data generated the heatmaps.</p>
-                        </div>
-                    </div>
-                    <VideoPlayer src={"/assets/heatmap.mp4"}/>
-                </div>
-                <br></br>
-                <br></br>
-                <br></br>
-                <div className='experienceEntry'>
-                    <VideoPlayer src={"/assets/trajectory.mp4"}/>
-                    <div className='educationContent'>
-                        <div className='withoutSmallTitle'>
-                            <h1 className='titleWithoutSubtitle'>Player Trajectory</h1>
-                            <p className='experienceEntryTextP'>The player trajectory feature is similar to the dynamic heatmap, offering a different visual representation of player movements during the game.</p>
-                            <p className='experienceEntryTextP'>Feedback on all features remained positive, mirroring the results from the prototype phase.</p>
-                        </div>
-                    </div>
-                </div>
+                </Section>
             </div>
         </div>
     );
