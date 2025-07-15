@@ -3,6 +3,7 @@ import Header from './Header';
 import arrow from '../assets/downArrow.png'
 import objDetectProt from '../assets/objDetectPrototype.png'
 import manualAnnotation from '../assets/manualAnnotation.png'
+import VideoPlayer from './VideoPlayer';
 
 
 
@@ -14,8 +15,7 @@ const Publications = () => {
                 <p><small>PUBLICATIONS</small></p>
                 <h1>Smashing Insights: Prototyping a Video-Based System For Racket Sports</h1>
                 <div className='experienceEntry'>
-                    <video src={"/assets/detection.mp4"}  autoPlay loop muted playsInline id='novaFCT'/>
-                    {/* <img src={novaFCT} id='novaFCT'></img> */}
+                    <VideoPlayer src={"/assets/detection.mp4"}/>
                     <div className='educationContent'>
                         <p><small>ABOUT</small></p>
                         <div className='experienceEntryTextDiv'>
@@ -66,16 +66,17 @@ const Publications = () => {
                             <p className='experienceEntryTextP'>The object detection feature identified players, the ball, rackets, the net, and the serve lines.</p>
                         </div>
                     </div>
-                    <video src={"/assets/detection.mp4"}  autoPlay loop muted playsInline id='novaFCT'/>
+                    <VideoPlayer src={"/assets/detection2.mp4"}/>
+                    {/* <video src={"/assets/detection2.mp4"}  autoPlay loop muted playsInline id='novaFCT'/> */}
                 </div>
                 <br></br>
                 <br></br>
                 <br></br>
                 <div className='experienceEntry'>
-                    <video src={"/assets/playerHighlight.mp4"}  autoPlay loop muted playsInline id='novaFCT'/>
+                    <VideoPlayer src={"/assets/playerHighlight.mp4"}/>
                     <div className='educationContent'>
                         <div className='withoutSmallTitle'>
-                            <h1>Player Tracking</h1>
+                            <h1 className='titleWithoutSubtitle'>Player Tracking</h1>
                             <p className='experienceEntryTextP'>The player tracking feature followed each player individually and highlighted the selected player's performance.</p>
                             <p className='experienceEntryTextP'>Users could switch between players and assign custom names.</p>
                         </div>
@@ -87,21 +88,21 @@ const Publications = () => {
                 <div className='experienceEntry'>
                     <div className='workContent'>
                         <div className='withoutSmallTitle'>
-                            <h1>Heatmap</h1>
+                            <h1 className='titleWithoutSubtitle'>Heatmap</h1>
                             <p className='experienceEntryTextP'>The heatmap feature included two versions: static and dynamic.</p>
                             <p className='experienceEntryTextP'>Detection data was used to draw the court, while tracking data generated the heatmaps.</p>
                         </div>
                     </div>
-                    <video src={"/assets/heatmap.mp4"}  autoPlay loop muted playsInline id='novaFCT'/>
+                    <VideoPlayer src={"/assets/heatmap.mp4"}/>
                 </div>
                 <br></br>
                 <br></br>
                 <br></br>
                 <div className='experienceEntry'>
-                    <video src={"/assets/trajectory.mp4"}  autoPlay loop muted playsInline id='novaFCT'/>
+                    <VideoPlayer src={"/assets/trajectory.mp4"}/>
                     <div className='educationContent'>
                         <div className='withoutSmallTitle'>
-                            <h1>Player Trajectory</h1>
+                            <h1 className='titleWithoutSubtitle'>Player Trajectory</h1>
                             <p className='experienceEntryTextP'>The player trajectory feature is similar to the dynamic heatmap, offering a different visual representation of player movements during the game.</p>
                             <p className='experienceEntryTextP'>Feedback on all features remained positive, mirroring the results from the prototype phase.</p>
                         </div>
