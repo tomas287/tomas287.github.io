@@ -13,5 +13,3 @@ export function Section({ children }) {
     </div>
   );
 }
-
-export default Section;
