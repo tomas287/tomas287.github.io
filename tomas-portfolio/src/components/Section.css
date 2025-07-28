@@ -6,3 +6,7 @@
 .section.visible {
   opacity: 1;
 }
+
+.hideAtFirst {
+  opacity: 0;
+}

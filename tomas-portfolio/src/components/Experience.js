@@ -37,7 +37,7 @@ const Experience = () => {
                     <p><small>SCROLL DOWN TO VIEW MORE</small></p>
                     <img src={arrow} title='Icon made by Freepik from www.flaticon.com' alt='' className="scrollArrow"></img>
                 </div>
-                <Section>
+                <Section className='hideAtFirst'>
                     <div className='experienceEntry'>
                         <div className='workContent'>
                             <p><small>WORK</small></p>

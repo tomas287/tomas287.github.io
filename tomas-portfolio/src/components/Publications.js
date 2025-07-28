@@ -30,7 +30,7 @@ const Publications = () => {
                     <p><small>SCROLL DOWN TO VIEW MORE</small></p>
                     <img src={arrow} title='Icon made by Freepik from www.flaticon.com' alt='' className="scrollArrow"></img>
                 </div>
-                <Section>
+                <Section className='hideAtFirst'>
                     <div className='experienceEntry'>
                         <div className='workContent'>
                             <p><small>PROTOTYPE</small></p>
@@ -46,7 +46,7 @@ const Publications = () => {
                 <br></br>
                 <br></br>
                 <br></br>
-                <Section>
+                <Section className='hideAtFirst'>
                     <div className='experienceEntry'>
                         <img src={manualAnnotation} id='novaFCT'></img>
                         <div className='educationContent'>
@@ -61,7 +61,7 @@ const Publications = () => {
                 <br></br>
                 <br></br>
                 <br></br>
-                <Section>
+                <Section className='hideAtFirst'>
                     <div className='experienceEntry'>
                         <div className='workContent'>
                             <p><small>FEATURES</small></p>
@@ -77,7 +77,7 @@ const Publications = () => {
                 <br></br>
                 <br></br>
                 <br></br>
-                <Section>
+                <Section className='hideAtFirst'>
                     <div className='experienceEntry'>
                         <VideoPlayer src={"/assets/playerHighlight.mp4"}/>
                         <div className='educationContent'>
@@ -92,7 +92,7 @@ const Publications = () => {
                 <br></br>
                 <br></br>
                 <br></br>
-                <Section>
+                <Section className='hideAtFirst'>
                     <div className='experienceEntry'>
                         <div className='workContent'>
                             <div className='withoutSmallTitle'>
@@ -107,7 +107,7 @@ const Publications = () => {
                 <br></br>
                 <br></br>
                 <br></br>
-                <Section>
+                <Section className='hideAtFirst'>
                     <div className='experienceEntry'>
                         <VideoPlayer src={"/assets/trajectory.mp4"}/>
                         <div className='educationContent'>
