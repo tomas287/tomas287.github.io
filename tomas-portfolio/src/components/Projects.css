@@ -1,0 +1,25 @@
+.projectsEntry {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90%;
+}
+
+.projectsEntry b {
+    font-size: larger;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.projectsEntry p {
+    margin: 0px;
+}
+
+
+.projectsImg {
+    width: -webkit-fill-available;
+}
+
+.technologies p small {
+    color: white !important;
+} 
