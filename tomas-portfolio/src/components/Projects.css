@@ -9,6 +9,8 @@
     font-size: larger;
     margin-top: .5rem;
     margin-bottom: .5rem;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .projectsEntry p {
@@ -18,8 +20,29 @@
 
 .projectsImg {
     width: -webkit-fill-available;
+    cursor: pointer;
 }
 
-.technologies p small {
-    color: white !important;
+.technologies {
+    margin-top: .5rem;
+    display: flex;
+}
+
+.technologyDiv {
+    display: flex;
+    align-items: center;
+    background-color: #313131ff;
+    padding: .5rem;
+    border-radius: 10px;
+    margin: .3rem;
 } 
+
+.technologyDiv img {
+    width: 25px;
+    margin-right: .3rem;
+}
+
+.technologyDiv p small {
+    color: white !important;
+    font-weight: bold;
+}
