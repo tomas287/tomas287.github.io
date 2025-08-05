@@ -8,6 +8,7 @@ import Skills from './components/Skills';
 import Publications from './components/Publications';
 import ScrollToTop from './components/ScrollToTop';
 import Projects from './components/Projects';
+import ContactMe from './components/ContactMe';
 
 function LoadingWrapper() {
   const [done, setDone] = useState(false);
@@ -34,8 +35,7 @@ function App() {
         <Route path="/skills" element={<Skills />} />
         <Route path="/publications" element={<Publications />} />
         <Route path="/projects" element={<Projects />} />
-        {/* <Route path="/projects" element={<Experience />} />
-        <Route path="/contact-me" element={<Experience />} /> */}
+        <Route path="/contact-me" element={<ContactMe />} /> */
       </Routes>
     </Router>
   );

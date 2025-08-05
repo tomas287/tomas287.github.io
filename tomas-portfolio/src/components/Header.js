@@ -20,7 +20,7 @@ const Header = () => {
                 <a onClick={() => handleClick("/skills")}>Skills</a>
                 <a onClick={() => handleClick("/projects")}>Projects</a>
                 <a onClick={() => handleClick("/publications")}>Publications</a>
-                <span>Contact Me</span>
+                <a onClick={() => handleClick("/contact-me")}>Contact Me</a>
             </div>
             <div>
                 <img src={user} onClick={() => handleClick("/profiles")} title='Icon made by Freepik from www.flaticon.com' alt='' className="changeProfile"></img>
