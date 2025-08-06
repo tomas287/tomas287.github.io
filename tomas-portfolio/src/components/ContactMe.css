@@ -54,7 +54,7 @@
 }
 
 .socialsContent b {
-    margin-right: 2rem !important;
+    margin-right: 2rem;
 }
 
 #socials {
@@ -66,10 +66,60 @@
     width: 40%;
 }
 
+.formContainer h4 {
+    margin-bottom: .5rem;
+}
+
 .namesContainer {
     display: flex;
 }
 
+.namesContainer textarea {
+    width: 100%;
+}
+
 .names {
     width: 50%;
+}
+
+#lastName {
+    margin-left: 1rem;
+}
+
+.emailContainer {
+    margin-top: .5rem !important;
+}
+
+.emailContainer textarea {
+    height: 1rem;
+    width: 100%;
+}
+
+.namesContainer textarea {
+    height: 1rem;
+}
+
+textarea {
+    resize: none;
+    color: white;
+    background-color: rgb(49, 49, 49);
+}
+
+.msgContainer textarea {
+    height: 7rem;
+    width: 100%;
+}
+
+#sendButtonDiv {
+    display: flex;
+    margin-top: .83rem;
+    justify-content: center;
+}
+
+#sendButtonDiv button {
+    height: 2rem;
+    color: white;
+    background-color: rgb(59, 130, 246);
+    box-shadow: 0px;
+    border: 0px;
 }
