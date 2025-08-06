@@ -29,8 +29,12 @@
     width: 1.5rem;
 }
 
-.textContainer h4 {
-    color: rgb(171, 171, 171);
+.textContainer label {
+    display: block;
+    margin-top: 1.33em;
+    margin-bottom: .5rem;
+    font-weight: bold;
+    color: white;
 }
 
 .contactMeContent h1 {
@@ -72,6 +76,7 @@
 
 .namesContainer {
     display: flex;
+    gap: 1.5rem;
 }
 
 .namesContainer textarea {
@@ -80,10 +85,6 @@
 
 .names {
     width: 50%;
-}
-
-#lastName {
-    margin-left: 1rem;
 }
 
 .emailContainer {
@@ -122,4 +123,6 @@ textarea {
     background-color: rgb(59, 130, 246);
     box-shadow: 0px;
     border: 0px;
+    font-weight: bold;
+    cursor: pointer;
 }

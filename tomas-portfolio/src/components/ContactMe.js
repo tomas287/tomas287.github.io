@@ -1,12 +1,20 @@
+import React from 'react';
+import { useForm, ValidationError } from '@formspree/react';
+import { useNavigate } from "react-router-dom";
+
 import './ContactMe.css';
-import email from '../assets/email.png'
-import like from '../assets/like.png'
 import linkedin from '../assets/linkedin.png'
 import github from '../assets/githubWhite.png'
 import Header from './Header';
 
 
 const ContactMe = () => {
+    const [state, handleSubmit] = useForm("xpwlyeyr");
+    const navigate = useNavigate();
+    
+    if (state.succeeded) {
+        navigate("/thank-you")
+    }
 
     return (
         <div className='contactMeContainer'>
@@ -25,7 +33,6 @@ const ContactMe = () => {
                                 <a>tmc.martins@outlook.com</a>
                             </div>
                             <div id='socials' className='socialsContent'>
-                                {/* <img className='indexImg' src={like}></img> */}
                                 <b>Socials:</b>
                                 <img onClick={() => window.open('https://www.linkedin.com/in/tom%C3%A1s-martins-9bb921360/')} src={linkedin}></img>
                                 <img onClick={() => window.open('https://github.com/tomas287')} src={github}></img>
@@ -33,58 +40,34 @@ const ContactMe = () => {
                         </div>
                     </div>
                     <div className='formContainer'>
-                        <div className='namesContainer'>
-                            <form className='names'>
-                                <label><h4>First Name</h4>
-                                    <textarea type="text" />
-                                </label>
-                            </form>
-                            <form className='names' id='lastName'>
-                                <label><h4>Last Name</h4>
-                                    <textarea type="text" />
-                                </label>
-                            </form>
-                        </div>
-                        <div className='emailContainer'>
-                            <form>
-                                <label><h4>Email</h4>
-                                    <textarea type="text" />
-                                </label>
-                            </form>
-                        </div>
-                        <div className='msgContainer'>
-                            <form>
-                                <label><h4>Message</h4>
-                                    <textarea type="text" />
-                                </label>
-                            </form>
-                        </div>
-                        <div id='sendButtonDiv'>
-                            <button><b>Send Email</b></button>
-                        </div>
+                        <form onSubmit={handleSubmit}>
+                            <div className='namesContainer'>
+                                <div className='names'>
+                                    <label htmlFor="firstName">First Name</label>
+                                    <textarea id='firstName' name='First Name'/>
+                                </div>
+                                <div className='names' id='lastName'>
+                                    <label htmlFor="lastName">Last Name</label>
+                                    <textarea id='lastName' name='Last Name'/>
+                                </div>
+                            </div>
+                            <div className='emailContainer'>
+                                <label htmlFor="email">Email</label>
+                                <textarea id='email' type="email" name='Email'/>
+                                <ValidationError prefix="Email" field="email" errors={state.errors}/>
+                            </div>
+                            <div className='msgContainer'>
+                                <label htmlFor="message">Message</label>
+                                <textarea id="message" name="message"/>
+                                <ValidationError prefix="Message" field="Message" errors={state.errors}/>
+                            </div>
+                            <div id='sendButtonDiv'>
+                                <button type="submit" disabled={state.submitting}>
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
                     </div>
-                        {/* <div className='namesContainer'>
-                            <div className='names'>
-                                <h4>First Name</h4>
-                                <form>adsasd</form>
-                            </div>
-                            <div className='names'>
-                                <h4>Last Name</h4>
-                                <form>adsasd</form>
-                            </div>
-                        </div>
-                        <div className='namesContainer'>
-                            <div className='names'>
-                                <h4>Email</h4>
-                                <form>adsasd</form>
-                            </div>
-                        </div>
-                        <div className='namesContainer'>
-                            <div className='names'>
-                                <h4>Message</h4>
-                                <form>adsasd</form>
-                            </div>
-                        </div> */}
                 </div>
             </div>
         </div>
